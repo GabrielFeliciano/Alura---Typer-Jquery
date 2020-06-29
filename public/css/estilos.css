@@ -1,0 +1,90 @@
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: cornsilk;
+}
+
+header {
+    padding: 3rem;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15%;
+}
+
+h1 { 
+    font-size: 4em;
+}
+
+.frase {
+    font-size: 1.2em;
+}
+
+h1, .frase {
+    font-weight: bold;
+    text-align: center;
+}
+
+#test-area {
+    box-sizing: border-box;
+    width: 80%;
+    resize: vertical;
+    min-height: 6rem;
+    max-height: 10rem;
+    font-size: 1.25rem;
+    border: .1rem solid #aaaaaa;
+    border-bottom: none;
+}
+
+.info {
+    padding: 1rem;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.test-area-disabled {
+    background-color: lightgray;
+}
+
+.right-word {
+    background-color: lightgreen;
+}
+
+.wrong-word {
+    background-color: salmon;
+}
+
+#button-reset-game {
+    width: 80%;
+    height: 2rem;
+    background-color: rgb(255, 169, 169);
+    border: none;
+    border: .1rem solid #aaaaaa;
+    border-top: none;
+    transition: .1s ease-in background-color;
+}
+
+#button-reset-game:hover {
+    background-color: rgb(255, 138, 138);
+}
+
+#button-reset-game, #test-area {
+    outline: none;
+}
+
+@keyframes GrowTestArea {
+    to {
+        transform: scale(1.1);
+    }
+}
